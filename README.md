@@ -2,6 +2,8 @@
 
 **通过 CobaltStike 服务端 / 客户端 挂载脚本，将上线主机信息通过 Server 酱通知到微信**
 
+> 如果想使用免费且支持微信模板消息推送的方式可以移步：https://github.com/lintstar/CS-PushPlus
+
 # 前言
 
 **使用旧的 CS Server酱通知脚本时看到了 ServerChan 关于旧版服务 API 下线的通知：**
