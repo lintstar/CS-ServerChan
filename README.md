@@ -8,7 +8,7 @@
 
 **使用旧的 CS Server酱通知脚本时看到了 ServerChan 关于旧版服务 API 下线的通知：**
 
-![Screenshot_20210728_110540_com.tencent.mm](https://qiniuyun.lintstar.top/hexo/20210728110826.png)
+![Screenshot_20210728_110540_com.tencent.mm](image/20210728110826.png)
 
 **那就更新下 sendkey 吧**
 
@@ -20,11 +20,11 @@
 
 **https://sct.ftqq.com/sendkey  复制自己的 KEY 替换到下面的地方**
 
-![image-20210728111654791](https://qiniuyun.lintstar.top/hexo/20210728111654.png)
+![image-20210728111654791](image/20210728111654.png)
 
 这里的通知模板支持 Markdown 格式可以随意替换
 
-![image-20210728111816041](https://qiniuyun.lintstar.top/hexo/20210728111816.png)
+![image-20210728111816041](image/20210728111816.png)
 
 > **这里加 Token随机数的原因是Server 酱一分钟内无法发送重复信息**
 
@@ -32,7 +32,7 @@
 
 **在客户端或者服务端后台挂载时，需要改成 `ServerChan.py` Python 脚本所在的绝对路径（从盘符开始）**
 
-![image-20210728111409394](https://qiniuyun.lintstar.top/hexo/20210728111409.png)
+![image-20210728111409394](image/20210728111409.png)
 
 **通过 CobaltStike 服务端 / 客户端 挂载脚本，将上线主机信息通过 Server 酱通知到微信**
 
@@ -81,11 +81,11 @@ Sending server: python3 /root/Tools/CS4.3/CS-SeverChan/ServerChan.py --computern
 
 ## 企业微信服务号通知
 
-![Screenshot_20210728_103739_com.tencent.mm](https://qiniuyun.lintstar.top/hexo/20210728112709.png)
+![Screenshot_20210728_103739_com.tencent.mm](image/20210728112709.png)
 
 ## 通知详情
 
-![Screenshot_20210728_103809_com.tencent.mm](https://qiniuyun.lintstar.top/hexo/20210728112550.png)
+![Screenshot_20210728_103809_com.tencent.mm](image/20210728112550.png)
 
 # 企业微信应用消息配置说明
 
@@ -106,17 +106,17 @@ Sending server: python3 /root/Tools/CS4.3/CS-SeverChan/ServerChan.py --computern
 
 注册成功后，点「管理企业」进入管理界面，选择「应用管理」 → 「自建」 → 「创建应用」
 
-![img](https://qiniuyun.lintstar.top/hexo/20210728113134.png)
+![img](image/20210728113134.png)
 
 应用名称填入「Server酱」，应用logo到[这里](https://theseven.ftqq.com/20210208142819.png)下载，可见范围选择公司名。
 
-![img](https://qiniuyun.lintstar.top/hexo/20210728113157.png)
+![img](image/20210728113157.png)
 
 创建完成后进入应用详情页，可以得到应用ID( `agentid` )①，应用Secret( `secret` )②。
 
 注意：`secret`推送到手机端时，只能在`企业微信客户端`中查看。
 
-[![img](https://camo.githubusercontent.com/ec3ddd2dd460680f9fc61acc8a1bd215fcb947608102764539c4ce43bc1e0f26/68747470733a2f2f746865736576656e2e667471712e636f6d2f32303231303230383134333535332e706e67)](https://camo.githubusercontent.com/ec3ddd2dd460680f9fc61acc8a1bd215fcb947608102764539c4ce43bc1e0f26/68747470733a2f2f746865736576656e2e667471712e636f6d2f32303231303230383134333535332e706e67)
+[![img](image/68747470733a2f2f746865736576656e2e667471712e636f6d2f32303231303230383134333535332e706e67.png)](https://camo.githubusercontent.com/ec3ddd2dd460680f9fc61acc8a1bd215fcb947608102764539c4ce43bc1e0f26/68747470733a2f2f746865736576656e2e667471712e636f6d2f32303231303230383134333535332e706e67)
 
 ## 0x03 获取企业ID
 
@@ -128,15 +128,15 @@ Sending server: python3 /root/Tools/CS4.3/CS-SeverChan/ServerChan.py --computern
 
 进入「我的企业」 → 「[微信插件](https://work.weixin.qq.com/wework_admin/frame#profile/wxPlugin)」，拉到下边扫描二维码，关注以后即可收到推送的消息。
 
-![img](https://qiniuyun.lintstar.top/hexo/20210728113233.png)
+![img](image/20210728113233.png)
 
 PS：如果出现`接口请求正常，企业微信接受消息正常，个人微信无法收到消息`的情况：
 
 1. 进入「我的企业」 → 「[微信插件](https://work.weixin.qq.com/wework_admin/frame#profile/wxPlugin)」，拉到最下方，勾选 “允许成员在微信插件中接收和回复聊天消息”
 
-   ![img](https://qiniuyun.lintstar.top/hexo/20210728113255.jpeg)
+   ![img](image/20210728113255.jpeg)
 
 2. 在企业微信客户端 「我」 → 「设置」 → 「新消息通知」中关闭 “仅在企业微信中接受消息” 限制条件
 
-    ![img](https://qiniuyun.lintstar.top/hexo/20210728113358.jpeg)
+    ![img](image/20210728113358.jpeg)
 
